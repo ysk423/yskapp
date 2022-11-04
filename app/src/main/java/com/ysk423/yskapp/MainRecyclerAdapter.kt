@@ -15,7 +15,7 @@ class MainRecyclerAdapter(var mContext: Context):
     val yskappMenu = listOf(
         "Sand box",//position 0
         "Uranai",//position 1
-        "tool3",//position 2
+        "Neko Punch",//position 2
         "tool4",//position 3
         "tool5",//position 4
         "tool6",//position 5
@@ -58,6 +58,7 @@ class MainRecyclerAdapter(var mContext: Context):
                 when(position){
                     0 -> mContext.startActivity(Intent(mContext,SandboxActivity::class.java))
                     1 -> mContext.startActivity(Intent(mContext,UranaiActivity::class.java))
+                    2 -> mContext.startActivity(Intent(mContext,NekoPunchActivity::class.java))
                     //position -> mContext.startActivity(Intent(mContext,ActivityName::class.java))
                     //else ->mContext.startActivity(Intent(mContext,MainActivity2::class.java))
                 }
