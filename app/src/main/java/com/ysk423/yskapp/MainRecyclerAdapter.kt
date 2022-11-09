@@ -16,7 +16,7 @@ class MainRecyclerAdapter(var mContext: Context):
         "Sand box",//position 0
         "Uranai",//position 1
         "Neko Punch",//position 2
-        "tool4",//position 3
+        "Paint",//position 3
         "tool5",//position 4
         "tool6",//position 5
         "tool7",//position 6
@@ -59,6 +59,7 @@ class MainRecyclerAdapter(var mContext: Context):
                     0 -> mContext.startActivity(Intent(mContext,SandboxActivity::class.java))
                     1 -> mContext.startActivity(Intent(mContext,UranaiActivity::class.java))
                     2 -> mContext.startActivity(Intent(mContext,NekoPunchActivity::class.java))
+                    3 -> mContext.startActivity(Intent(mContext,PaintActivity::class.java))
                     //position -> mContext.startActivity(Intent(mContext,ActivityName::class.java))
                     //else ->mContext.startActivity(Intent(mContext,MainActivity2::class.java))
                 }
