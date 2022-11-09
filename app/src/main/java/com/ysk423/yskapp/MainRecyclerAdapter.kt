@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MainRecyclerAdapter(var mContext: Context):
     RecyclerView.Adapter<MainRecyclerAdapter.ViewHolderItem>() {
 
-    //リストを用意
+    //機能リストを用意
     val yskappMenu = listOf(
         "Sand box",//position 0
         "Uranai",//position 1
@@ -51,7 +51,7 @@ class MainRecyclerAdapter(var mContext: Context):
     inner class ViewHolderItem(itemView: View):RecyclerView.ViewHolder(itemView){
         val itemName: TextView = itemView.findViewById(R.id.tvMainOneMenuLayout)
 
-        //リストがクリックされたらPostionの条件のIntentを投げて、リストのターゲットActivityに遷移
+        //リストがクリックされたらPostionの条件のIntentを投げて、機能リストのターゲットActivityに遷移
         init{
             itemView.setOnClickListener {
                 val position:Int = adapterPosition
