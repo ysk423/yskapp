@@ -17,7 +17,7 @@ class MainRecyclerAdapter(var mContext: Context):
         "Uranai",//position 1
         "Neko Punch",//position 2
         "Paint",//position 3
-        "tool5",//position 4
+        "Music",//position 4
         "tool6",//position 5
         "tool7",//position 6
         "tool8",//position 7
@@ -60,6 +60,7 @@ class MainRecyclerAdapter(var mContext: Context):
                     1 -> mContext.startActivity(Intent(mContext,UranaiActivity::class.java))
                     2 -> mContext.startActivity(Intent(mContext,NekoPunchActivity::class.java))
                     3 -> mContext.startActivity(Intent(mContext,PaintActivity::class.java))
+                    4 -> mContext.startActivity(Intent(mContext,BackgroundMusicActivity::class.java))
                     //position -> mContext.startActivity(Intent(mContext,ActivityName::class.java))
                     //else ->mContext.startActivity(Intent(mContext,MainActivity2::class.java))
                 }
