@@ -62,7 +62,8 @@ class MainRecyclerAdapter(var mContext: Context):
                     3 -> mContext.startActivity(Intent(mContext,PaintActivity::class.java))
                     4 -> mContext.startActivity(Intent(mContext,BackgroundMusicActivity::class.java))
                     //position -> mContext.startActivity(Intent(mContext,ActivityName::class.java))
-                    //else ->mContext.startActivity(Intent(mContext,MainActivity2::class.java))
+
+                    else ->mContext.startActivity(Intent(mContext,OutOfServiceActivity::class.java))
                 }
 
             }
