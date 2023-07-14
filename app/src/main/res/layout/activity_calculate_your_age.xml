@@ -11,12 +11,75 @@
     android:padding="16dp"
     >
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CALCULATE YOUR"
-        android:textSize="34sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@color/textBlue"
+        android:textColor="@color/white"
+        android:text="Age"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="IN MINUTES"
+        android:textColor="@color/textBlue"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCalculateYourAgeDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT DATE"
+        android:textSize="18sp"
+        android:backgroundTint="@color/btnbgColor"
+        android:textColor="@color/lithgGray"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="↓SELECTED DATE↓"
+        android:textColor="@color/textBlue"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvCalculateYourAgeSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="- - - -"
+        android:textColor="@color/textBlue"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="↓AGE IN MINUTES↓"
+        android:textColor="@color/textBlue"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvCalculateYourAgeInMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="- - - -"
+        android:textColor="@color/textBlue"
+        android:textSize="20sp"/>
 
 </LinearLayout>

@@ -10,4 +10,6 @@
     <color name="bgYellow">#e9c46a</color>
     <color name="btnbgColor">#2a9d8f</color>
     <color name="lithgGray">#b7b7a4</color>
+    <color name="textBlue">#264653</color>
+
 </resources>
