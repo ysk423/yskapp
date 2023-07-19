@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/tvCalculatorInput"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="end|bottom"
+        android:padding="10dp"
+        android:text="@string/calculator_text"
+        android:textSize="48sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCalculator7"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/_7"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnCalculator8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/_8"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnCalculator9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/_9"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnCalculatorDivide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/divide"
+            android:onClick="onCalculatorOperator"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnCalculator4"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_4"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnCalculator5"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_5"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btnCalculator6"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_6"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btnCalculatorMultiply"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/multiply"
+            android:onClick="onCalculatorOperator"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnCalculator1"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_1"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnCalculator2"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_2"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btnCalculator3"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_3"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btnCalculatorSubtract"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/subtract"
+            android:onClick="onCalculatorOperator"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnCalculator0"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_0"
+            android:onClick="onCalculatorDigit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnCalculatorDot"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/dot"
+            android:onClick="onCalculatorDecimalPoint"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btnCalculatorCLR"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/clr"
+            android:onClick="onCalculatorClear"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btnCalculatorPlus"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/plus"
+            android:onClick="onCalculatorOperator"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnCalculatorEqual"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/equal"
+            android:onClick="onCalculatorEqual"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
