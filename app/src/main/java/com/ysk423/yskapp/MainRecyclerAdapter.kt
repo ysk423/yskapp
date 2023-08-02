@@ -20,7 +20,7 @@ class MainRecyclerAdapter(var mContext: Context):
         "Music",//position 4
         "CalculateYourAge",//position 5
         "Calculator",//position 6
-        "tool8",//position 7
+        "DrawingAdvance",//position 7
         "tool9",//position 8
         "tool10",//position 9
         "tool11",//position 10
