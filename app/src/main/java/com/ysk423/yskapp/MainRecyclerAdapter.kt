@@ -63,6 +63,7 @@ class MainRecyclerAdapter(var mContext: Context):
                     4 -> mContext.startActivity(Intent(mContext,BackgroundMusicActivity::class.java))
                     5 -> mContext.startActivity(Intent(mContext,CalculateYourAgeActivity::class.java))
                     6 -> mContext.startActivity(Intent(mContext,CalculatorActivity::class.java))
+                    7 -> mContext.startActivity(Intent(mContext,DrawingAdvanceActivity::class.java))
                     //position -> mContext.startActivity(Intent(mContext,ActivityName::class.java))
 
                     else ->mContext.startActivity(Intent(mContext,OutOfServiceActivity::class.java))

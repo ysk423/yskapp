@@ -13,8 +13,10 @@
         android:theme="@style/Theme.Yskapp"
         tools:targetApi="31">
         <activity
-            android:name=".DrawingAdvance"
-            android:exported="false">
+            android:name=".DrawingAdvanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
