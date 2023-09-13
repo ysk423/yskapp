@@ -3,6 +3,7 @@ package com.ysk423.yskapp
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.view.MotionEvent
 import android.view.View
 
@@ -30,8 +31,8 @@ class DrawingAdvanceView(context: Context, attrs:AttributeSet):View(context, att
         mDrawPaint!!.strokeJoin = Paint.Join.ROUND
         mDrawPaint!!.strokeCap = Paint.Cap.ROUND
         mCanvasPaint = Paint(Paint.DITHER_FLAG)
-        mBrushSize = 20.toFloat()
-    }
+        //mBrushSize = 20.toFloat() //デフォルトの設定はDrawingAdvanceActivityに移管
+        }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
@@ -92,6 +93,14 @@ class DrawingAdvanceView(context: Context, attrs:AttributeSet):View(context, att
         return true
     }
 
+    //ブラシサイズの変更
+    fun setSizeForBrush(newSize:Float){
+        mBrushSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+            newSize, resources.displayMetrics)
+        mDrawPaint!!.strokeWidth = mBrushSize
+    }
+
+
     internal inner class CustomPath(var color: Int, var brushThickness: Float): Path(){
 
     }
@@ -99,4 +108,4 @@ class DrawingAdvanceView(context: Context, attrs:AttributeSet):View(context, att
 
 }
 
-//次：121
+//次：123
