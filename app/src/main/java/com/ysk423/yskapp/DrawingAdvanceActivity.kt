@@ -17,7 +17,7 @@ class DrawingAdvanceActivity : AppCompatActivity() {
         drawingAdvanceView?.setSizeForBrush(20.toFloat())
 
         //ブラシサイズアイコンのクリック
-        val ib_brush: ImageButton = findViewById(R.id.ib_drawing_advance_brush)
+        val ib_brush: ImageButton = findViewById(R.id.ibDrawingAdvanceBrush)
         ib_brush.setOnClickListener {
             showBrushSizeChooserDialog()
         }

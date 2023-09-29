@@ -108,4 +108,4 @@ class DrawingAdvanceView(context: Context, attrs:AttributeSet):View(context, att
 
 }
 
-//次：123
+//次：123 1305

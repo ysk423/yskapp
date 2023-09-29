@@ -20,3 +20,16 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
 }
+
+/*
+
+ネーミングルール
+ID名：
+ローワーキャメルケースを使うこと
+nameNameName
+
+drawable,layout名:
+スネークケースを使うこと
+layout_layout_layout
+
+*/
