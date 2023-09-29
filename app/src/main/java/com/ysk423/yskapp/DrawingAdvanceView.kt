@@ -100,12 +100,16 @@ class DrawingAdvanceView(context: Context, attrs:AttributeSet):View(context, att
         mDrawPaint!!.strokeWidth = mBrushSize
     }
 
+    fun setColor(newColor: String){
+        color = Color.parseColor(newColor)
+        mDrawPaint!!.color = color
+    }
 
+    //An Inner class for custom path with two params as color and stroke size
     internal inner class CustomPath(var color: Int, var brushThickness: Float): Path(){
-
     }
 
 
 }
 
-//次：123 1305
+//次：124
